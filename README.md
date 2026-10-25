@@ -1,5 +1,3 @@
----
-
 ## Mastering the Linux File System: The Foundation of Ethical Hacking! 
 
 Here is a breakdown of the essential commands I’ve been practicing, categorized by their core functions in security analysis:
